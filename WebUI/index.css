@@ -1,0 +1,111 @@
+.custom-mobile {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0;
+}
+
+.custom-scrollbar {
+    scrollbar-width: none;
+}
+
+
+.gradient-bg {
+    background: linear-gradient(135deg, #7F00FF 0%, #E100FF 100%);
+    min-height: 100vh;
+    /* font-family: 'Press Start 2P'; */
+    /* google sans */
+    font-family: 'Google Sans', sans-serif;
+    font-size: 0.7rem;
+}
+
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-circle {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  /* Set the background color of code blocks to dark */
+pre[class*="language-"] {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    text-shadow: none;
+  }
+  
+  /* Style the copy button */
+  .copy-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  /* Position the copy button within the code block */
+  pre[class*="language-"] {
+    position: relative;
+    padding-top: 30px;
+  }
+  
+  /* Style the copy button on hover */
+  .copy-button:hover {
+    background-color: #347e3e;
+  }
+
+  
+  pre {
+    /* bg white */
+    background-color: #fff;
+    padding: 0.7rem;
+    font-size: 1rem;
+    /* border curved */
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  code {
+    text-shadow: none !important;
+    color: black !important;
+    /* text size  */
+    font-size: 0.8rem;
+  }
+
+  /* my page shouldn't scroll */
+    body {
+        overflow: hidden;
+    }
+
+    label {
+      margin-bottom: 0 !important;
+    }
+
+    /* a tag in black instead of blue since bg is already blue */
+    a {
+      color: black;
+    }
+
+  .gradient-bg-transition {
+      background: linear-gradient(135deg, #000 0%, #000 100%);
+      transition: background 1s ease-in-out; /* Adjust duration and easing function according to your needs */
+  }
+  
+  .CodeMirror { height: 40vh; min-height: 20vh; }
